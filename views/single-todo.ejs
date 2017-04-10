@@ -16,12 +16,12 @@
             <td><%= todoItem.description %></td>
             <td><%= todoItem.completed %></td>
             <td>
-                <form method="POST" action="/showAndUpdateTodo">
+                <form method="POST" action="/:id">
                     <button value=<%- showTodo.id %> name='id'>View/Update</button>
                 </form>
             </td>
             <td>
-                <form method="POST" action="/todos?_method=DELETE">
+                <form method="POST" action="/:id">
                     <button value=<%- showTodo.id %> name='id'>Remove</button>
                 </form>
             </td>
